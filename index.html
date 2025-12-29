@@ -28,6 +28,7 @@
               <img src="assets/dest_kepler.jpeg" alt="Kepler-186f" />
               <figcaption>
                 <h3>Kepler-186f</h3>
+                <p>Earth-like exoplanet with stable atmosphere</p>
               </figcaption>
             </figure>
             <div class="card-details">
@@ -40,6 +41,7 @@
               <img src="assets/dest_titan.jpeg" alt="Titan Station" />
               <figcaption>
                 <h3>Titan Station</h3>
+                <p>Industrial hub orbiting Saturn</p>
               </figcaption>
             </figure>
             <div class="card-details">
@@ -52,6 +54,7 @@
               <img src="assets/dest_nebula.jpeg" alt="Nebula Resort" />
               <figcaption>
                 <h3>Nebula Resort</h3>
+                <p>Luxury retreat inside a glowing nebula</p>
               </figcaption>
             </figure>
             <div class="card-details">
@@ -64,6 +67,7 @@
               <img src="assets/dest_blackhole.jpeg" alt="Event Horizon" />
               <figcaption>
                 <h3>Event Horizon</h3>
+                <p>Extreme gravity zone near a black hole</p>
               </figcaption>
             </figure>
             <div class="card-details">
@@ -135,35 +139,36 @@
         </div>
       </section>
       <section id="booking">
-        <dic class="kiosk-interface">
+        <div class="kiosk-interface">
           <h2>SELF-SERVICE TERMINAL</h2>
           <form action="#" method="post">
             <fieldset>
               <legend>IDENTITY VERIFICATION</legend>
+              <label for="full-designation">Full Designation</label>
               <input
                 type="text"
                 id="full-designation"
                 name="full_designation"
               />
-              <label for="full-designation">Full Designation</label>
-              <input type="text" id="id-code" name="id_code" />
               <label for="id-code">ID Code</label>
+              <input type="text" id="id-code" name="id_code" />
             </fieldset>
             <fieldset>
               <legend>FLIGHT PARAMETERS</legend>
+              <label for="flight-parameters">Flight Parameters</label>
               <input
                 type="text"
                 list="planets"
                 name="flight-parameters"
                 id="flight-parameters"
               />
-              <label for="flight-parameters">Flight Parameters</label>
               <datalist id="planets">
                 <option value="Kepler-186f">Kepler-186f</option>
                 <option value="Titan Station"></option>
                 <option value="Nebula Resort"></option>
                 <option value="Event Horizon"></option>
               </datalist>
+              <label for="cabin-class">Cabin Class</label>
               <select name="cabin=class" id="cabin-class">
                 <option value="Economy (Stasis Pod)">
                   Economy (Stasis Pod)
@@ -173,11 +178,10 @@
                   First (Zero-G Suite)
                 </option>
               </select>
-              <label for="cabin-class">Cabin Class</label>
             </fieldset>
             <button type="submit">AUTHORIZE CREDIT TRANSFER</button>
           </form>
-        </dic>
+        </div>
       </section>
     </main>
     <footer>
